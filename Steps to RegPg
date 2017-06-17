@@ -1,0 +1,20 @@
+Prerequisite : Mysql-connector zip file
+
+--> Integrating tomcat into eclipse:
+	Window > Preferences > Server > Add > Apache Tomcat x.x > Browse to tomcat installation directory > Finish
+
+--> Open a Dynamic web project > Next > Next > Generate web.xml deployment descriptor > Finish
+--> Right click 'src' > new > servlet > Next > set URL-mapping tag 
+--> Write servlet code > make entry into web.xml
+--> Entry into web.xml : 
+	 <servlet>
+	  	<servlet-name>any_name</servlet-name>
+	  	<servlet-class>Created class file name</servlet-class>
+	  </servlet>
+	  
+	  <servlet-mapping>
+	  	<servlet-name>any_name</servlet-name>
+	  	<url-pattern>URL-mapping tag</url-pattern>
+	  </servlet-mapping>
+--> Deploying servlet:
+	Right click on project > Run as > run on server > Manually define new server, tomcat x.x , server name localhost, > next > finish > 		Include URL-mapping tag in the URL 
