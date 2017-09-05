@@ -57,7 +57,7 @@ public class RegPg extends HttpServlet
 		        Class.forName("com.mysql.jdbc.Driver");
 		
 			//creating connection with the database 
-		        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/STUD", "root", "*a0669968990p*");
+		        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/STUD", "XXXX", "XXXXXXXX");
 		        
 		       
 			        
